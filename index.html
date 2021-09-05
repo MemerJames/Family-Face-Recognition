@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Family face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+      <div class="container">
+          <center>
+              <h3 class="btn btn-default heading">FAMILY FACE RECOGNITION</h3>
+              <br>
+              <br>
+              <h4 style="font-size: 20px;">Model is trained to know family members</h4>
+              <b class="family_faces">
+                <div id="face">dad</div>
+                <br><br>
+                <div id="face">mom</div>
+                <br><br>
+                <div id="face">me</div>
+
+              </b>
+
+              <label>Webcam View - </label>
+              <div id="camera"></div>
+              <br><br>
+              <div id="results"></div>
+              <br><br>
+              <button onclick="take_snapshot();" class="btn btn-info">Capture face</button>
+              <br><br>
+              <button onclick="check();" class="btn btn-success">Identify Face</button>
+              <br><br>
+          </center>
+      </div>
+  </body>
